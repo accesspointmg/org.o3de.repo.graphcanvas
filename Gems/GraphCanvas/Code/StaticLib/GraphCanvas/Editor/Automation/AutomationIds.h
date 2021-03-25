@@ -1,5 +1,5 @@
 /*
-* All or portions of this file Copyright (c) Amazon.com, Inc. or its affiliates or
+* All or Portions of this file Copyright (c) Amazon.com, Inc. or its affiliates or
 * its licensors.
 *
 * For complete copyright and license terms please see the LICENSE at the root of this
@@ -9,20 +9,17 @@
 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 *
 */
+#pragma once
 
-#include <precompiled.h>
-#include <GraphCanvasModule.h>
+#include <AzCore/Math/Crc.h>
 
 namespace GraphCanvas
 {
-    GraphCanvasModule::GraphCanvasModule()
+    namespace AutomationIds
     {
-    }
-
-    AZ::ComponentTypeList GraphCanvasModule::GetRequiredSystemComponents() const
-    {
-        return AZ::ComponentTypeList{};
+        // ToolBar
+        static const AZ::Crc32 CreateCommentButton = AZ_CRC("GC_CreateCommentButton", 0xb83d2bef);
+        static const AZ::Crc32 GroupButton = AZ_CRC("GC_GroupButton", 0x4ee8f5e9);
+        static const AZ::Crc32 UngroupButton = AZ_CRC("GC_UngroupButton", 0xe7f2c4fd);
     }
 }
-
-AZ_DECLARE_MODULE_CLASS(GraphCanvas_875b6fcbdeea44deaae7984ad9bb6cdc, GraphCanvas::GraphCanvasModule)
