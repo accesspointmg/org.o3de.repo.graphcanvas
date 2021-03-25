@@ -9,20 +9,17 @@
 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 *
 */
+#include "precompiled.h"
+#include <AzTest/AzTest.h>
 
-#include <precompiled.h>
-#include <GraphCanvasModule.h>
-
-namespace GraphCanvas
+class GraphCanvasTest
+    : public ::testing::Test
 {
-    GraphCanvasModule::GraphCanvasModule()
-    {
-    }
+};
 
-    AZ::ComponentTypeList GraphCanvasModule::GetRequiredSystemComponents() const
-    {
-        return AZ::ComponentTypeList{};
-    }
+TEST_F(GraphCanvasTest, Sanity_Pass)
+{
+    EXPECT_TRUE(1 == 1);
 }
 
-AZ_DECLARE_MODULE_CLASS(GraphCanvas_875b6fcbdeea44deaae7984ad9bb6cdc, GraphCanvas::GraphCanvasModule)
+AZ_UNIT_TEST_HOOK();
