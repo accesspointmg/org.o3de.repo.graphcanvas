@@ -5,6 +5,6 @@
  * SPDX-License-Identifier: Apache-2.0 OR MIT
  *
  */
-#pragma once
+#include <AzTest/AzTest.h>
 
-
+AZ_UNIT_TEST_HOOK(DEFAULT_UNIT_TEST_ENV);
