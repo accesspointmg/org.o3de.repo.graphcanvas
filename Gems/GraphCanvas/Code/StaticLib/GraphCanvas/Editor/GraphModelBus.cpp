@@ -6,10 +6,6 @@
  *
  */
 
-#include <AzCore/Serialization/SerializeContext.h>
-#include <GraphCanvas/Styling/definitions.h>
+#include <GraphCanvas/Editor/GraphModelBus.h>
 
-int LinkerWarningWorkaround()
-{
-    return 0;
-}
+DECLARE_EBUS_INSTANTIATION(GraphCanvas::GraphModelRequests);

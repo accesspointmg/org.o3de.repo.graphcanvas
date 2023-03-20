@@ -6,4 +6,6 @@
  *
  */
 
-#include <Source/Components/Nodes/Comment/CommentLayerControllerComponent.h>
+#include <GraphCanvas/Components/Slots/SlotBus.h>
+
+DECLARE_EBUS_INSTANTIATION(GraphCanvas::SlotRequests);

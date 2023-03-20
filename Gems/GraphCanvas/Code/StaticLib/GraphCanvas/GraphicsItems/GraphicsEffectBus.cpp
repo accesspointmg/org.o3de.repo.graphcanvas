@@ -5,6 +5,7 @@
  * SPDX-License-Identifier: Apache-2.0 OR MIT
  *
  */
-#pragma once
 
+#include <GraphCanvas/GraphicsItems/GraphicsEffectBus.h>
 
+DECLARE_EBUS_INSTANTIATION(GraphCanvas::GraphicsEffectRequests);
